@@ -1,0 +1,83 @@
+## K. N. Toosi University of Technology
+**Fundamentals of Intelligent Systems - Fall 2023**
+**Mini Project 3**
+
+### Project Deadline & Summary
+- You are required to submit a complete written report covering all sections of this mini-project.
+- The submission deadline is **Friday, 26 January 2024, 23:59**.
+
+---
+
+### Problem 1: Fuzzy Systems for Function Approximation
+- Design **two fuzzy systems** for approximation using the **upper and lower bounds of first-order and second-order relations** from [2] (pages 10-11 and 4-11, respectively).
+- Approximate the function:
+
+  g(x1, x2) = 1 / (3 + x1 + x2)
+
+  over the domain **U = [−1, 1] × [−1, 1]** with an accuracy of **ϵ = 0.1**.
+- Compare and plot the designed fuzzy systems.
+
+---
+
+### Problem 2: Table Lookup Search for Time-Series Prediction
+- Implement a **table lookup search algorithm** for predicting the **Mackey-Glass time series**.
+- Ensure your implementation supports empty table entries for a complete and versatile solution.
+- Test and present the results in a suitable format, referencing section **12.3** of [2].
+
+---
+
+### Problem 3: Fuzzy System for Nonlinear System Identification
+- Consider the given **difference equation-based nonlinear system**:
+
+  y(k + 1) = 0.3y(k) + 0.6y(k − 1) + g[u(k)]
+
+  where g[u(k)] is an unknown function defined as:
+
+  g(u) = 0.6 sin(πu) + 0.3 sin(3πu) + 0.1 sin(5πu)
+
+- Design a **fuzzy system** to approximate the unknown nonlinear component g[u(k)], utilizing **gradient descent learning**.
+- Implement and validate the approximation using the equations (13.5, 13.8, 13.9) from [2].
+
+---
+
+### Problem 4: Decision Tree Implementation & Analysis
+1. **Implement a Decision Tree Classifier from Scratch**
+   - Do not use **Scikit-Learn** or any pre-built libraries.
+   - Apply the model to a **COVID-19 dataset** and analyze the results.
+   - If possible, extract additional insights from the decision tree output.
+   - Provide logical analysis of the obtained results.
+
+2. **Train Decision Tree Models Using Scikit-Learn**
+   - Select one of the following datasets: **Drugs** or **Breast Cancer**.
+   - Train and compare decision trees with different hyperparameters.
+   - Analyze model performance using metrics such as **pruning techniques** and parameter tuning.
+
+3. **(Optional)** Apply a decision tree classifier to the **Life Expectancy Dataset** and analyze the results.
+
+---
+
+### Problem 5 (Optional): Image Contrast Enhancement using Fuzzy Logic
+- Traditional contrast enhancement methods like **Histogram Equalization** often lead to excessive contrast changes, reducing image quality.
+- Develop a **fuzzy logic-based contrast enhancement system** to address these limitations.
+- Implement and compare your approach with standard methods in terms of **quality metrics (PSNR, processing time, etc.)**.
+- Refer to provided Colab notebooks and research papers for guidance.
+
+---
+
+### Resources & References
+- [Decision Tree Structure Example](https://scikit-learn.org/stable/auto_examples/tree/plot_unveil_tree_structure.html)
+- [Drugs Dataset](https://www.kaggle.com/datasets/pablomgomez21/drugs-a-b-c-x-y-for-decision-trees)
+- [Breast Cancer Dataset](https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_breast_cancer.html#sklearn.datasets.load_breast_cancer)
+- [Life Expectancy Dataset](https://www.kaggle.com/datasets/kumarajarshi/life-expectancy-who)
+- [Google Colab Implementation for Image Enhancement](https://colab.research.google.com/drive/1gju6CvG7rJl-kyiaB6LLzHuvLaKiR-XZ?usp=sharing)
+- [Reference Book: A Course in Fuzzy Systems and Control - L. X. Wang (1997)]
+
+---
+
+### Submission Guidelines
+- Submit a **detailed report** covering all required sections.
+- Include **code implementations** with clear explanations.
+- Ensure proper formatting and visualization of results.
+- Deadline: **26 January 2024, 23:59**
+
+---
